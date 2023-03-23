@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Mobile No : <input type="text" name="" id="mno" maxlength="10" onblur="return mobile_length()" onkeyup="return mobile_ex()">
+    
+        <span id="msg"></span>
+        
+        <br> <br>
+    
+        <span id="msg1"></span>
+
+        <button type="submit" onclick="return check_blank()">check mobile no</button>
+    </form>
+
+
+    <script>
+        function check_blank(){
+            let mno = document.getElementById("mno").value;
+
+            if(mno == ""){
+                document.getElementById("msg").innerHTML = "enter mobile no"
+                return false;
+            }
+        }
+
+
+        function mobile_length(){
+            let mno = document.getElementById("mno").value;
+
+            if(mno < 10){
+                document.getElementById("msg").innerHTML = "enter valid number"
+                return false;
+            }else{
+                document.getElementById("msg").innerHTML = ""
+                return false;
+            }
+        }
+
+        function mobile_ex(){
+            let mno = document.getElementById("mno").value;
+            let reg_ex = /^[0-9]*$/
+
+            if(reg_ex.test(mno)){
+                document.getElementById("msg1").innerHTML = ""
+                return false;
+            }else{
+                document.getElementById("msg1").innerHTML = "alphabet not allowed"
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
