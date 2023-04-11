@@ -1,0 +1,117 @@
+(1) What is JavaScript? 
+
+Ans=>JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS
+
+(2)What is the use of isNaN function?(isnan=is not a number)
+
+Ans=>The isNaN() function determines whether a value is NaN when converted to a number.
+=>The function isNaN() is used to check the value of any variable or state is a number or not
+
+(3) What is negative Infinity? 
+
+Ans=> The Number.NEGATIVE_INFINITY property represents the negative Infinity value. Any value that goes over the maximum value is available in JavaScript gets changed to negative infinity.
+
+ document.write(-5/0) = -infinity
+
+(4) Which company developed JavaScript? 
+
+Ans=>JavaScript was invented by Brendan Eich in 1995. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.
+
+(5) What are undeclared and undefined variables? 
+
+Ans=>Undeclared variables are those that have not been declared or defined in the current scope, while undefined variables are those that have been declared but not given a value. Understanding the difference between these two terms is crucial for writing correct and effective JavaScript code.
+
+undefined = var name;
+            console.log(name)
+
+undeclared = username ;
+           console.log(username)
+           username is not defined
+
+ (6) Write the code for adding new elements dynamically?
+
+ Ans=>          <button>Add Element</button>
+            <script>
+                const btn = dodument.getelementbyid("button")
+                btn.addeventlisner("click",function(){
+                    add("button");
+                })
+
+(7) What is the difference between ViewState and SessionState? 
+
+Ans=>Session state is saved on the server, ViewState is saved in the page. 
+
+
+View state - State management is on the client side.
+
+Session state - State management is on the server side.
+
+View state  - Data is accessible within the same web page.
+
+Session state - Data is accessible from other web pages of the website.
+
+View state  - Loss of information occurs when different web page is loaded.
+
+Session state - Loss of information occurs due to timeout.
+
+View state - Data is stored in a hidden field of the same web page.
+
+Session state  - Data is stored in sessions and cookies.
+
+View state - It's less secure.
+
+Session state - It's more secure.
+
+
+(8) What is === operator? 
+
+Ans=>The difference between == and === is that == compares if the values are equal e.g. 1 = “1” would be true whereas === compares values and types e.g. 1=”1” would be false.
+
+(9) How can the style/class of an element be changed? 
+
+Ans=>Another way to alter the style of an element is by changing its class attribute. class is a reserved word in JavaScript, so in order to access the element's class, you use element. className .
+
+(10) How to read and write a file using JavaScript?
+
+Ans=>
+(1) file=fopen(getScriptPath(),0); The function fread() is used for reading the file content.
+(2) str = fread(file,flength(file) ; The function fwrite() is used to write the contents to the file.
+(3) file = fopen("c:\MyFile.txt", 3);// opens the file for writing.
+
+(11)  What are all the looping structures in JavaScript?
+
+Ans=>
+for - loops through a block of code a number of times.
+for/in - loops through the properties of an object.
+for/of - loops through the values of an iterable object.
+while - loops through a block of code while a specified condition is true.
+
+(12) How can you convert the string of any base to an integer in JavaScript?
+
+Ans=>To convert a string to an integer parseInt(), Number(), and Unary operator(+) function is used in javascript. parseInt() function returns Nan( not a number) when the string doesn't contain number. If a string with a number is sent, then only that number will be returned as the output.
+
+(13)  What is the function of the delete operator? 
+
+Ans=>The delete operator removes a property from an object. If the property's value is an object and there are no more references to the object, the object held by that property is eventually released automatically.
+
+(14)  What are all the types of Pop up boxes available in JavaScript? 
+
+Ans=>JavaScript has three kind of popup boxes: Alert box, Confirm box, and Prompt box.
+
+(15) What is the use of Void (0)? 
+
+Ans=>JavaScript void 0 means returning undefined (void) as a primitive value. You might come across the term “JavaScript:void(0)” while going through HTML documents. It is used to prevent any side effects caused while inserting an expression in a web page
+
+(16) How can a page be forced to load another page in JavaScript? 
+
+Ans=>
+
+
+(17)  What are the disadvantages of using innerHTML in JavaScript? 
+
+Ans=>
+Event handlers attached to any DOM element are preserved.
+Replacement is done everywhere.
+It is not possible to append innerHTML.
+Breaks the document.
+Used for Cross-site Scripting
