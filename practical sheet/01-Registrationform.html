@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="01-Reg.css">
+    <script src="01-Reg_reg_ex.js"></script>
+    <script src="01-Reg_all_blank.js"></script>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="regpage">
+        <h1>Registration Page</h1>
+        <form action="">
+            <div class="row">
+                <div class="col-1">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter First Name" id="fname" onkeyup="return reg_ex_name()">
+                </div>
+                <div class="col-3">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Middle Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Middle Name" id="middle" onkeyup="reg_ex_middle()">
+                   
+                </div>
+                <div class="col-3">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Last Name" id="last" onkeyup="reg_ex_last()">
+                </div>
+                <div class="col-3">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col-2">
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </div>
+                <div class="col-3">
+                    <span id="msg4"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Date Of Birth</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" id="dob" onkeyup="return reg_ex_date()">
+                </div>
+                <div class="col-3">
+                    <span id="msg-4"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Address</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="" id="add" cols="30" rows="5" placeholder="Enter Address" onkeyup="return blnk_add()"></textarea>
+                </div>
+                <div class="col-3">
+                    <span id="msg--4"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Experiance</label>
+                </div>
+                <div class="col-2">
+                    <select name="" id="city" onblur="return blnk_city()">
+                        <option value="-1">-------Select-----</option>
+                        <option value="">2 years</option>
+                        <option value="">4 years</option>
+                        <option value="">6 years</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <span id="msg---4"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Email id</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Email" id="mail" onkeyup="reg_ex_mail()">
+                </div>
+                <div class="col-3">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Mobile No</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Enter Mobile No" id="mno" maxlength="10" onkeyup="return mobile_ex()">
+                </div>
+                <div class="col-3">
+                    <span id="msg6"></span>
+                    <span id="msg7"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Create Passsword</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" placeholder="Enter Password" id="pass" onkeyup="return reg_ex_pass()"> <br>
+                    <input type="checkbox" onclick="return show_pass()">Show Password
+                </div>
+                <div class="col-3">
+                    <span id="msg8"></span>
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="return check_blank()">Register</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

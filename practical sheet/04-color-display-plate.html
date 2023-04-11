@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            height: 150px;
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    Select Color:
+    <input type="color" id="clr">
+    <button id="btn">Set Color</button>
+
+    <br><br>
+
+    <div id="div1"></div>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+
+        let div1 = document.getElementById("div1");
+
+        btn.addEventListener("click",function(){
+
+        let clr = document.getElementById("clr").value;
+
+        div1.style.backgroundColor = clr;
+            
+        })
+
+    </script>
+</body>
+</html>

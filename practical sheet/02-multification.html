@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+    <label for="">Enter any number : </label>
+    <input type="text" id="num">
+    <span id="msg1"></span>
+    <br><br><br>
+    <button onclick="return display_table()">Display</button> <br> <br>
+   <p id="p1"></p>
+    </form>
+    
+
+    <script>
+        function display_table(){
+           var num = document.getElementById("num").value;
+
+            if(num == ""){
+                document.getElementById("msg1").innerHTML = "Enter No;"
+                return false;
+            }else{
+                var i = 1;
+                var res = "";
+                for(i=1; i<11; i++){
+                    res =  res + "<p>" + num + "*" + i + "=" + num * i + "</p>"
+                    }
+                document.getElementById("p1").innerHTML = res;
+                return false;
+            }
+
+        }
+    </script>
+
+</body>
+</html>

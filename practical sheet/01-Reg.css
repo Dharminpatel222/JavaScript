@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: conic-gradient(green,green,green,green);
+}
+.regpage{
+    width: 50%;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px;
+    align-items: center;
+}
+.col-1{
+    flex: 1;
+    text-align: right;
+}
+.col-2{
+    flex: 2;
+    padding-left: 20px;
+}
+.col-3{
+    flex: 1;
+    padding-left: 5px;
+}
+input[type="text"],[type="date"],[type=password],select{
+    height: 30px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0px 5px;
+    font-size: 12px;
+}
+input[type="text"],[type="date"],[type=password],select,textarea:focus-visible{
+    outline: none;
+}
+.btn{
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-radius: 15px;
+   
+}
+button{
+    height: 40px;
+     width: 200px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
